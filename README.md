@@ -253,11 +253,16 @@ apt install screen
 screen -S chatbot
 ```
 
-### Run the Script
+### Start the Script
 
 ```bash
 ./chatbot.sh
 ```
+
+### Stop the Script
+
+Press `Ctrl + C`
+
 
 ### Detach from Session
 
