@@ -51,7 +51,7 @@ gaianet init --base $HOME/$home_dir
 
 ---
 
-## ▶️ 3. Start the Node
+## ▶️ 3. To Start the Node
 
 ```bash
 gaianet start --base $HOME/gaianet
@@ -67,7 +67,15 @@ gaianet info --base $HOME/gaianet
 
 ---
 
-## 🤖 5. Chatbot Script Setup
+## 🔴 5. To Stop the Node
+
+```bash
+gaianet stop --base $HOME/gaianet
+```
+
+---
+
+## 🤖 6. Chatbot Script Setup
 
 > **Key Points:**  
 - Each node can handle **max 10 requests per cycle**.  
@@ -231,7 +239,7 @@ chmod +x chatbot.sh
 
 ---
 
-## 📟 6. Run Chatbot Script in Background (using `screen`)
+## 📟 7. Run Chatbot Script in Background (using `screen`)
 
 ### Install `screen` (if not installed)
 
