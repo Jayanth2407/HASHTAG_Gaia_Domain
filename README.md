@@ -280,5 +280,3 @@ screen -r chatbot
 ---
 
 ### ✅ You’re all set to run Gaia nodes and interact with the model!
-
-Let me know if you'd like this in PDF or Markdown `.md` format.
