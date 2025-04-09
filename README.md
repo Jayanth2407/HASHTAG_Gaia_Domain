@@ -16,7 +16,7 @@
 ## 🔧 1. Install Required Packages and CUDA 12.8
 
 ```bash
-rm -rf ~/packageskit.sh; curl -O https://raw.githubusercontent.com/Jayanth2407/HASHTAG_Gaia_Domai/main/packageskit.sh; chmod +x packageskit.sh; ./packageskit.sh
+rm -rf ~/packageskit.sh; curl -O https://raw.githubusercontent.com/Jayanth2407/HASHTAG_Gaia_Domain/main/packageskit.sh; chmod +x packageskit.sh; ./packageskit.sh
 ```
 
 ---
