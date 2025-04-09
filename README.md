@@ -1,5 +1,5 @@
 # 🚀 Simple Guide to Run Gaia Nodes on Gaianet  
-**Tested and verified for `hashtag.gaia.domains` domain only**
+**Tested and verified for HASHATAG domain only**
 
 ---
 
