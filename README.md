@@ -37,29 +37,18 @@ apt-get -y install cuda-toolkit-12-8
 home_dir="gaianet"
 gaia_port="8000"
 gaia_config="Qwen2.5-0.5B-Instruct-Q5_K_M"
-
-# Kill any process on the same port and cleanup old setup
 lsof -t -i:$gaia_port | xargs kill -9
 rm -rf $HOME/$home_dir
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/uninstall.sh' | bash
-
-# Create working directory and install node
 mkdir $HOME/$home_dir
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --ggmlcuda 12 --base $HOME/$home_dir
 source /root/.bashrc
-
-# Download and set config
-wget -O "$HOME/$home_dir/config.json" https://raw.githubusercontent.com/Jayanth2407/gaiaNode/main/config2.json
+wget -O "$HOME/$home_dir/config.json" https://raw.githubusercontent.com/Jayanth2407/HASHTAG_Gaia_Domain/main/config.json
 CONFIG_FILE="$HOME/$home_dir/config.json"
-
 jq '.chat = "https://huggingface.co/gaianet/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/Qwen2.5-0.5B-Instruct-Q5_K_M.gguf"' "$CONFIG_FILE" > tmp.json && mv tmp.json "$CONFIG_FILE"
 jq '.chat_name = "Qwen2.5-0.5B-Instruct-Q5_K_M"' "$CONFIG_FILE" > tmp.json && mv tmp.json "$CONFIG_FILE"
-
-# Verify config
 grep '"chat":' $CONFIG_FILE
 grep '"chat_name":' $CONFIG_FILE
-
-# Final initialization
 gaianet config --base $HOME/$home_dir --port $gaia_port
 gaianet init --base $HOME/$home_dir
 ```
