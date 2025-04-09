@@ -1,7 +1,3 @@
-Here’s a cleaner, more polished version of your README with enhanced formatting, clarity, and grammar while keeping your technical flow intact:
-
----
-
 # 🚀 Simple Guide to Run Gaia Nodes on Gaianet  
 **Tested and verified for `hashtag.gaia.domains` domain only**
 
