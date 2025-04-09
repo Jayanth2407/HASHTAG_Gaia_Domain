@@ -222,7 +222,7 @@ EOF
 
         if [[ "$http_status" -eq 200 && -n "$reply" ]]; then
             echo "✅ [SUCCESS]$proxy_used"
-            echo "💬 Response: $reply"
+            echo "💬 Response received"
             return
         else
             echo "❌ [FAILED] Status: $http_status$proxy_used (Attempt $attempt)"
