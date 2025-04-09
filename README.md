@@ -78,7 +78,8 @@ gaianet stop --base $HOME/gaianet
 ## 🤖 6. Chatbot Script Setup
 
 > **Key Points:**   
-- Replace `"gaia-api1"` with your **actual API key(s)**.  
+- Replace `"gaia-api1"` with your **actual API key(s)**. 
+- Add as many api's you want, the chatbot will utilize all api's equally. DOnt add invalid/broken api's which is restricted/banned. 
 - Use proxy if need or else leave it as it is. 
 
 ### Create/Edit the `chatbot.sh` Script
