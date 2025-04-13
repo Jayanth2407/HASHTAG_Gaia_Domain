@@ -1,7 +1,7 @@
 ```markdown
-# ⚡ Blitz Collector - GPU Mining on Solana
+# ⚡ Blitz Collector - Mining on Solana
 
-Farm $BITZ efficiently using your GPU on a Solana-based network. This guide helps you install all dependencies, configure your wallet, set up RPC, and start farming with Blitz.
+Farm $BITZ efficiently using your GPU/CPU on a Solana-based network. This guide helps you install all dependencies, configure your wallet, set up RPC, and start farming with Blitz.
 
 > 💡 Recommended: Use Ubuntu 20.04/22.04 VPS with root access
 
