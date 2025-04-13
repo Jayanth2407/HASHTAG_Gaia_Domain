@@ -1,5 +1,3 @@
----
-
 ```markdown
 # ⚡ Blitz Collector - GPU Mining on Solana
 
