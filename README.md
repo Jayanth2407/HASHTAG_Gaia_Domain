@@ -21,7 +21,7 @@ rm -rf ~/packageskit.sh; curl -O https://raw.githubusercontent.com/Jayanth2407/H
 
 ---
 
-## ⚙️ 2. Install and Configure the Node
+## ⚙️ 2. Install and Configure the Node (Copy and paste the full code)
 
 ```bash
 home_dir="gaianet"
@@ -69,7 +69,7 @@ gaianet stop --base $HOME/gaianet
 
 ---
 
-## 🤖 6. Chatbot Script Setup
+## 🤖 6. Chatbot Script Setup (Mandatory to earn points) 
 
 > **Key Points:**   
 - Replace `"gaia-api1"` with your **actual API key(s)**. 
