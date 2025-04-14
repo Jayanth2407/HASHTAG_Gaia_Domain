@@ -11,7 +11,7 @@
 - 🧠 RAM/VRAM: **10 GB**  
 - ⚡ Recommended GPU: **NVIDIA 3080 or above** 
 - ⚡ Recommended CPU: **10 cores+**
-- 🔌 GPU Power: **200W+**
+- 🔌 GPU Power: **150W+**
 
 ---
 
