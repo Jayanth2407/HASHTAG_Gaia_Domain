@@ -5,10 +5,12 @@
 
 ### 🌐 Domain: `hashtag.gaia.domains`  
 ### 🤖 Model: `Qwen2.5-0.5B-Instruct-Q5_K_M`
+### 💬 Dm on Telegram To Accept Node: `@jayanth24`
 
 > **Minimum Requirements**  
 - 🧠 RAM/VRAM: **10 GB**  
-- ⚡ Recommended GPU: **NVIDIA 3080 or above**  
+- ⚡ Recommended GPU: **NVIDIA 3080 or above** 
+- ⚡ Recommended CPU: **10 cores+**
 - 🔌 GPU Power: **200W+**
 
 ---
