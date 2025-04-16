@@ -107,10 +107,7 @@ API_KEYS=(
 
 # Proxies in http://username:password@ip:port format
 PROXIES=(
-    #"http://user1:pass1@ip1:port"
-    #"http://user2:pass2@ip2:port"
-    # Add more if needed
-    # Leave as it is if you don't want to use proxies, if need remove '#'
+    # Add Proxie's here if needed
 )
 
 # Gaia endpoint
