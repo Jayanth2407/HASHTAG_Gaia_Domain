@@ -75,10 +75,14 @@ gaianet stop --base $HOME/gaianet
 
 > **Key Points:**   
 - Replace `"gaia-api"` with your **actual API key(s)**. 
-- If you have more than 1 api add all api line by line in the below format inside the chatbot code
-  "gaia-apimMyNGVhMTQtYzkzNC00NTlhLTg3NTU"
-  "gaia-apimMyNGVhMTQtYzkzNC00NTlhLTg3NTU"
-  "gaia-apimMyNGVhMTQtYzkzNC00NTlhLTg3NTU"
+- If you have more than 1 API, add all API's line by line in the below format inside the chatbot code
+```bash
+API_KEYS=(
+    "gaia-abcdefghijklhNWQ3MGQtM2FiYy00MWNhLWI0ZTY"
+    "gaia-abcdefghijklhNWQ3MGQtM2FiYy00MWNhLWI0ZTY"
+    "gaia-abcdefghijklhNWQ3MGQtM2FiYy00MWNhLWI0ZTY"
+)
+```
 - Add as many api's you want, the chatbot will utilize all api's equally. DOnt add invalid/broken api's which is restricted/banned. 
 - Use proxy if need or else leave it as it is. 
 
