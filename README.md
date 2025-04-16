@@ -83,10 +83,17 @@ API_KEYS=(
     "gaia-abcdefghijklhNWQ3MGQtM2FiYy00MWNhLWI0ZTY"
 )
 ```
-- Add as many api's you want, the chatbot will utilize all api's equally. DOnt add invalid/broken api's which is restricted/banned. 
-- Use proxy if need or else leave it as it is. 
+- Add as many api's you want, the chatbot will utilize all api's equally. Dont add invalid/broken api's which is restricted/banned. 
+- Use proxy if needed in the below format (Recommended if u use more than 1 API).
+ ```bash
+PROXIES=(
+    "http://user1:pass1@ip1:port"
+    "http://user2:pass2@ip2:port"
+    # Add more if needed
+)
+```
 
-### Create/Edit the `chatbot.sh` Script
+### To Create/Edit the chatbot script use this command `nano chatbot.sh`
 
 Paste the following script inside `chatbot.sh`:
 
