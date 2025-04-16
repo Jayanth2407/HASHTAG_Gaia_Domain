@@ -74,7 +74,11 @@ gaianet stop --base $HOME/gaianet
 ## 🤖 6. Chatbot Script Setup (Mandatory to earn points) 
 
 > **Key Points:**   
-- Replace `"gaia-api1"` with your **actual API key(s)**. 
+- Replace `"gaia-api"` with your **actual API key(s)**. 
+- If you have more than 1 api add all api line by line in the below format inside the chatbot code
+  "gaia-apimMyNGVhMTQtYzkzNC00NTlhLTg3NTU"
+  "gaia-apimMyNGVhMTQtYzkzNC00NTlhLTg3NTU"
+  "gaia-apimMyNGVhMTQtYzkzNC00NTlhLTg3NTU"
 - Add as many api's you want, the chatbot will utilize all api's equally. DOnt add invalid/broken api's which is restricted/banned. 
 - Use proxy if need or else leave it as it is. 
 
@@ -87,9 +91,7 @@ Paste the following script inside `chatbot.sh`:
 
 # API keys
 API_KEYS=(
-    "gaia-api1"
-    "gaia-api2"
-    "gaia-api3"
+    "gaia-api" #Add your API here
 )
 
 # Proxies in http://username:password@ip:port format
