@@ -84,7 +84,7 @@ API_KEYS=(
 )
 ```
 - Add as many api's you want, the chatbot will utilize all api's equally. Dont add invalid/broken api's which is restricted/banned. 
-- Use proxy if needed in the below format (Recommended if u use more than 1 API).
+- Use proxy if needed in the below format (Recommended if you use more than 1 API).
  ```bash
 PROXIES=(
     "http://user1:pass1@ip1:port"
