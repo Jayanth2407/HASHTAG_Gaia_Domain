@@ -29,18 +29,26 @@ apt update && apt install -y curl && rm -rf ~/packageskit.sh; curl -O https://ra
 home_dir="gaianet"
 gaia_port="8000"
 gaia_config="Qwen2.5-0.5B-Instruct-Q5_K_M"
-lsof -t -i:$gaia_port | xargs kill -9
+CONFIG_FILE="$HOME/$home_dir/config.json"
+lsof -t -i:$gaia_port | xargs kill -9 2>/dev/null
 rm -rf $HOME/$home_dir
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/uninstall.sh' | bash
-mkdir $HOME/$home_dir
+mkdir -p $HOME/$home_dir
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash -s -- --ggmlcuda 12 --base $HOME/$home_dir
 source /root/.bashrc
-wget -O "$HOME/$home_dir/config.json" https://raw.githubusercontent.com/Jayanth2407/HASHTAG_Gaia_Domain/main/config.json
-CONFIG_FILE="$HOME/$home_dir/config.json"
-jq '.chat = "https://huggingface.co/gaianet/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/Qwen2.5-0.5B-Instruct-Q5_K_M.gguf"' "$CONFIG_FILE" > tmp.json && mv tmp.json "$CONFIG_FILE"
-jq '.chat_name = "Qwen2.5-0.5B-Instruct-Q5_K_M"' "$CONFIG_FILE" > tmp.json && mv tmp.json "$CONFIG_FILE"
-grep '"chat":' $CONFIG_FILE
-grep '"chat_name":' $CONFIG_FILE
+wget -O "$CONFIG_FILE" https://raw.githubusercontent.com/Jayanth2407/HASHTAG_Gaia_Domain/main/config.json
+jq '. + {
+  chat: "https://huggingface.co/gaianet/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/'"$gaia_config"'.gguf",
+  chat_name: "'"$gaia_config"'",
+  llamaedge_chat_port: '"$gaia_port"',
+  llamaedge_port: '"$gaia_port"',
+  llamaedge_embedding_port: '"$gaia_port"'
+}' "$CONFIG_FILE" > tmp.json && mv tmp.json "$CONFIG_FILE"
+grep '"chat":' "$CONFIG_FILE"
+grep '"chat_name":' "$CONFIG_FILE"
+grep '"llamaedge_chat_port":' "$CONFIG_FILE"
+grep '"llamaedge_port":' "$CONFIG_FILE"
+grep '"llamaedge_embedding_port":' "$CONFIG_FILE"
 gaianet config --base $HOME/$home_dir --port $gaia_port
 gaianet init --base $HOME/$home_dir
 ```
